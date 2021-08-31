@@ -1,0 +1,45 @@
+body {
+	color: #303841;
+	overflow: hidden;
+
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 50px;
+
+}
+
+#GenerateSnippet {
+	padding: 7em 18em;
+	text-align: center;
+	display: block;
+
+}
+
+#description {
+	text-transform: capitalize;
+}
+
+#form-group {
+	margin-top: 1em;
+	text-align: left;
+	font-weight: 500;
+
+}
+
+#generatebtn {
+	margin-top: 3em; background-color: #31787f; border-color: #303841; margin-bottom: 1em;
+}
+
+#CreatedSnippet {
+	padding: 7em 18em; text-align: center; display: none
+}
+
+#btnSnippetdownload {
+margin-top: 3em; background-color: #303841; border-color: #31787f;
+}
+
+#btnSnippetcopy {
+margin-top: 3em; background-color: #31787f; border-color: #303841;
+}
