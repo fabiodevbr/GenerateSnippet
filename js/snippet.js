@@ -52,7 +52,7 @@
         document.getElementById('inpEditor').value = 'Sublime Text'
         document.getElementById('inpCode').value = ''
         document.getElementById('inpAction').value = ''
-        document.getElementById('inpFile').value = 'none';
+        document.getElementById('inpFile').value = 'all';
 
     }
 
@@ -62,7 +62,7 @@
 
       //link variables to inputs
       var code = document.getElementById('snippetCode').value;
-      var fileName = document.getElementById('inpFile').value + '.sublime-snippet';
+      var fileName = document.getElementById('inpAction').value + '.sublime-snippet';
 
       var blob = new Blob([code], { type: 'text/sublime-snippet' });
 
@@ -77,3 +77,4 @@
 
 
     }
+
