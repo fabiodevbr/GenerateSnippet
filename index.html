@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Create Snippets</title>
+
+		<!-- Call Bootstrapp css -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+		<!-- Call Style Css --> 
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+	<div id="GenerateSnippet" class="GenerateSnippet">
+
+		<h1 >Create a <span style="color: #31787f;">Snippet</span></h1>
+		<p class="description" id="description"> Save time creating shortcuts words that became a full code in you editor </p>
+
+
+		<form>
+			 <div class="form-group" id="form-group">
+		    <label for="lblEditor">Editor</label>
+		    <select class="form-control" id="inpEditor">
+		      <option>Sublime Text</option>
+		    </select>
+		  </div>
+		  <div class="form-group" id="form-group">
+		    <label for="exampleFormControlSelect1">File</label>
+		    <select class="form-control" id="inpFile">
+		      <option value="">none</option>
+		      <option value="text/html">html</option>
+		      <option>javascript</option>
+		      <option>typescript</option>
+		      <option>python</option>
+		    </select>
+		  </div>
+		  <div class="form-group" id="form-group">
+		    <label for="exampleFormControlTextarea1">Code</label>
+		    <textarea class="form-control" id="inpCode" rows="3" placeholder="The code that will show up with this Snippet"></textarea>
+		  </div>
+		  <div class="form-group" id="form-group">
+	    <label for="exampleFormControlInput1">Action</label>
+	    <input type="email" class="form-control" id="inpAction" placeholder="like 'html' or 'hello' the text you put to became the code">
+	  </div>
+
+
+		</form>
+
+		<!-- GENERATE SNIPPET CODE -->
+		<button type="button" class="btn btn-primary btn-lg btn-block generatebtn" id="generatebtn" onclick="Snippet()">Generate Snippet</button>
+
+		<!-- If you like this code, give me a job 😢 -->
+		<div style="margin-top: 1em; font-weight: 700; ">
+			<a href="https://github.com/fabiodevbr" style="text-decoration: none; color: #31787f;">
+			fabiodevbr
+			<p style="transform: rotate(90deg); margin-top: -7px; "> > </p>
+			</a>
+		</div>
+		
+	</div>
+
+	<div id="CreatedSnippet">
+
+		<h1>Generated <span style="color: #31787f;">Snippet</span></h1>
+
+
+		<textarea style="margin-top: 2em" class="form-control" id="snippetCode" rows="6"act></textarea>
+
+		<code id="snippetCode"></code>
+
+		<!-- Download Snippet Code -->
+		<button  type="button" class="btn btn-primary btn-lg btn-block " id="btnSnippetdownload" onclick="DownloadSnippet()">Download Snippet Code</button>
+
+		<!-- Copy Snippet Code to Clipboard -->
+		<button  type="button" class="btn btn-primary btn-lg btn-block btnSnippet" id="btnSnippetcopy" onclick="CopySnippet()">Copy Snippet Code</button>
+	<br>
+		<!-- Create a new Snippet -->
+		<button style="margin-top: 2em" type="button" class="btn btn-outline-dark" onclick="newSnippet()">Create new Snippet</button>
+
+		<!-- If you like this code, give me a job 😢 -->
+		<div style="margin-top: 1em; font-weight: 700; ">
+			<a href="https://github.com/fabiodevbr" style="text-decoration: none; color: #31787f;">
+			fabiodevbr
+			<p style="transform: rotate(90deg); margin-top: -7px; "> > </p>
+			</a>
+		</div>
+		
+	</div>
+
+	<!-- Call Functions -->
+	<script type="text/javascript" src="js/snippet.js"></script>
+	</body>
+</html>
